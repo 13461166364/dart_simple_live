@@ -16,8 +16,8 @@ jobs:
       # 添加这个关键步骤 ↓
     - name: Update Kotlin plugin version
       run: |
-        sed -i 's/ext.kotlin_version = .*/ext.kotlin_version = "1.9.23"/' ./android/build.gradle
-        sed -i '/org\.jetbrains\.kotlin\.android/a \        id "org.jetbrains.kotlin.android" version "1.9.23"' ./android/settings.gradle
+        sed -i 's/ext.kotlin_version = .*/ext.kotlin_version = "2.1.21"/' ./android/build.gradle
+        sed -i '/org\.jetbrains\.kotlin\.android/a \        id "org.jetbrains.kotlin.android" version "2.1.21"' ./android/settings.gradle
 
     
       #APK签名设置
